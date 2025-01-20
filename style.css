@@ -1,0 +1,150 @@
+/* *********fonts family************** */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*,
+*::after, 
+*::before {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color:#F7F7F7;
+    --skyblue-color:#01ACFD;
+    --light-blue:#3CD8E8;
+    --orange-color:#FEA301;
+    --black-color:#111111;
+    --purple-color:#5D58F0;
+    --green-color:#95B226;
+    --text-color:#666666;
+    --full-black-color:#0000;
+    --inside-shadow:0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+    --small-radius:16px;
+    --medium-radius:19px;
+    --btn-radius:12px;
+}
+body{
+    font-size: 0.7rem;
+    font-family: "Raleway", serif;
+    line-height: 1.8;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Quicksand", serif;
+    color: var(--black-color);
+    line-height: 1.2;
+}
+.main-heading{
+    font-size: 2rem;
+}
+.sub-heading{
+    font-size: 1.625rem;
+}
+.box-heading{
+    font-size: 1rem;
+}
+.text-md{
+    font-size: 0.875rem;
+}
+
+.container{
+    max-width: 100%;
+    margin-inline:auto;
+    padding-inline:20px;
+}
+.btn{
+    padding:6px 24px;
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--black-color);
+    color:var(--white-color);
+    border-radius: 8px;
+    outline:0;
+    border:1px solid var(--black-color);
+}
+
+
+/* *********************media query *************/
+
+@media screen and (min-width: 576px){
+    .container{
+        max-width: 540px;
+     
+    }
+}
+
+@media screen and (min-width: 768px){
+
+
+    body{
+        font-size: 0.8rem;
+    
+    }
+    .container{
+        max-width: 720px;
+     
+    }
+    .text-md{
+        font-size: 1rem;
+    }
+    
+    .main-heading{
+        font-size: 3rem;
+    }
+    .sub-heading{
+        font-size: 2rem;
+    }
+
+    .box-heading{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 940px;
+     
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body{
+        font-size: 1rem;
+    
+    }
+    .container{
+        max-width: 1140px;
+     
+    }
+    .main-heading{
+        font-size: 3.5rem;
+    }
+    .sub-heading{
+        font-size: 2.875rem;
+    }
+    .text-md{
+        font-size: 1.25rem;
+    }
+
+    .box-heading{
+        font-size: 1.5rem;
+    }
+
+    .btn{
+        padding:10px 61px;
+        font-size: 1.25rem;
+        border-radius: 12px;
+    }
+    
+}
+@media screen and (min-width: 1300px){
+    .container{
+        max-width: 1200px;
+     
+    }
+}
+
