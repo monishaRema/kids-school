@@ -29,6 +29,7 @@ body{
     font-size: 0.7rem;
     font-family: "Raleway", serif;
     line-height: 1.8;
+    background:var(--white-color);
 
 }
 
@@ -37,6 +38,18 @@ h1,h2,h3,h4,h5,h6{
     color: var(--black-color);
     line-height: 1.2;
 }
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button{
+    outline:0;
+    cursor: pointer;
+}
+button:focus{
+    outline:0;
+}
+
 .main-heading{
     font-size: 2rem;
 }
@@ -65,9 +78,120 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 8px;
     outline:0;
     border:1px solid var(--black-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+
+    background-color: transparent;
+    color:var(--black-color);
+}
+
+/* ***************navigation section**************** */
+.navbar{
+    padding-block:12px;
+    border-bottom:0.5px solid var(--orange-color);
+
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.logo img{
+    max-width: 46px;
+}
+.hamburger img{
+   
+}
+
+.menu{
+    
+}
+.logo-name{
+    display: none;
+
+}
+
+.nav-menu{
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+.nav-menu li a{
+    padding:10px 15px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.nav-menu li.about a{
+    color:var(--skyblue-color);
+}
+
+.nav-menu li.facilities a{
+    color:var(--light-blue);
+}
+.nav-menu li.admission a{
+    color:var(--purple-color);
+}
+.nav-menu li.active a,
+.nav-menu li a:hover{
+    color:var(--orange-color);
+}
+
+.nav-btn{
+    display: none;
+    background-color: var(--orange-color);
+    border-color: var(--orange-color);
+}
+.nav-btn:hover{
+
+    background-color: transparent;
+    color:var(--orange-color);
+    border-color: var(--orange-color);
 }
 
 
+/* *******************hero section************* */
+
+.hero-content-container{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content{
+    text-align: center;
+    max-width: 640px;
+    margin-inline:auto;
+  
+}
+.main-heading{
+ margin-top:20px;
+}
+
+#empower{
+    color: var(--orange-color);
+}
+
+#vision{
+    color: var(--skyblue-color);
+}
+
+.hero-desc{
+    padding-block:18px;
+}
+
+.hero-img img{
+    max-width: 100%;
+    margin-inline:auto;
+}
 /* *********************media query *************/
 
 @media screen and (min-width: 576px){
@@ -102,6 +226,10 @@ h1,h2,h3,h4,h5,h6{
     .box-heading{
         font-size: 1.25rem;
     }
+
+
+    
+
 }
 
 @media screen and (min-width: 992px){
@@ -109,6 +237,76 @@ h1,h2,h3,h4,h5,h6{
         max-width: 940px;
      
     }
+    .btn{
+        padding:10px 61px;
+        font-size: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .hero-content-container{
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .hero-content{
+        text-align: start;
+        margin-right: 50px;
+    }
+      
+
+    /* ***************navigation section**************** */
+.navbar{
+    padding-block:20px;
+    border-bottom:none;
+
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img{
+    max-width: 62px;
+}
+.hamburger img{
+   
+}
+.hamburger{
+    display: none;
+}
+
+.menu{
+    
+}
+.logo-name{
+    display:block ;
+    font-size: 2rem;
+
+}
+
+.nav-menu{
+    display: flex;
+}
+.nav-menu li a{
+    padding:10px 15px;
+    font-size: 1.25rem;
+}
+
+.nav-btn{
+    display: block;
+}
 }
 
 @media screen and (min-width: 1200px){
@@ -134,11 +332,6 @@ h1,h2,h3,h4,h5,h6{
         font-size: 1.5rem;
     }
 
-    .btn{
-        padding:10px 61px;
-        font-size: 1.25rem;
-        border-radius: 12px;
-    }
     
 }
 @media screen and (min-width: 1300px){
