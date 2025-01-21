@@ -358,6 +358,80 @@ button:focus {
 .summer .story-box-meta{
     background-color: var(--purple-color);
 }
+
+
+/* ******************* footer ****************** */
+
+.footer {
+  background-color: var(--skyblue-color);
+  color: #fff;
+  padding-block: 60px;
+}
+
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer h3{
+    color: #fff;
+}
+.footer ul {
+    list-style-type: none;
+}
+
+.footer-heading{
+    font-size: 1.25rem;
+    margin-bottom :32px;
+}
+
+.footer-brands{
+    display: flex;
+    flex-direction: row;
+    gap :10px;
+}
+
+.footer-brands a{
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.footer-brands a:hover img{
+  filter :drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.3));
+}
+
+.footer-nav-links{
+   display: inline-block;
+   padding-block: 8px;
+   font-size: 1rem;
+   font-weight: 500;
+   color: #fff;
+   transition: all 0.3s;
+}
+.footer-nav-links:hover{
+    color: var(--orange-color);
+}
+
+.footer-about{
+    max-width: 350px;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-text{
+    font-size: 2rem;
+}
+
+.footer-about-text{
+    font-size: 1rem;
+    margin-top: 22px;
+}
 /* *********************media query *************/
 
 @media screen and (min-width: 576px) {
@@ -524,7 +598,36 @@ button:focus {
     font-size: 1rem;
 }
 
+
+.footer {
+    padding-block: 120px;
+  }
+
+  .footer-content{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
 }
+
+.footer-heading{
+    font-size: 1.5rem;
+}
+
+.footer-nav-links{
+    font-size: 1.25rem;
+    padding-block: 10px;
+
+}
+
+.footer-logo-text{
+    font-size: 2.5rem;
+}
+
+.footer-about-text{
+    font-size: 1.25rem;
+    margin-top: 35px;
+}
+}   
 
 
 
